@@ -21,7 +21,7 @@ pip install scapy
 
 ## 1. Run the Blocker (Requires root)
 
-- sudo python3 dos_monitor_blocker.py
+- sudo python3 dos_tool.py
 
 
 ## 2. Run the Tester
