@@ -1,4 +1,4 @@
-# DoS Monitoring & Blocking Tool
+# Simple DoS Monitoring & Blocking Tool
 
 This repository contains two Python scripts for monitoring and mitigating DoS attacks:
 
@@ -18,3 +18,33 @@ This repository contains two Python scripts for monitoring and mitigating DoS at
 ## Requirements
 ```bash
 pip install scapy
+
+# Usage
+
+## 1. Run the Blocker (Requires root)
+
+```bash
+sudo python3 dos_monitor_blocker.py
+
+
+2. Run the Tester
+
+    Edit configuration in dos_tester.py:
+    python
+
+TARGET_IP = "192.168.1.100"  # Target server IP
+INTERFACE = "eth0"           # Network interface
+
+Execute:
+bash
+
+    python3 dos_tester.py
+
+## Testing Setup
+
+Successful tests were performed using two virtual machines:
+
+| Role               | Environment      |
+|--------------------|------------------|
+| Monitoring/Blocking | Ubuntu 22.04 LTS |
+| Traffic Generator   | Kali Linux       |
