@@ -1,4 +1,4 @@
-# Simple DoS Monitoring & Blocking Tool
+# Basic DoS Monitoring & Blocking Tool
 
 
 ### `dos_tool.py`
